@@ -9,7 +9,7 @@ from sharpy import VERSION
 setup(
     name='Sharpy',
     version=".".join(map(str, VERSION)),
-    description='Python client for the Cheddar Getter API (http://cheddargetter.com).',
+    description='Python client for the GetCheddar (formerly CheddarGetter) API (http://getcheddar.com).',
     author="Sean O'Connor",
     author_email="sean@saaspire.com",
     url="https://github.com/Saaspire/sharpy",

@@ -7,13 +7,13 @@
 Sharpy
 ======
 
-Sharpy is a client for the Cheddar Getter (https://cheddargetter.com/) API.
-Cheddar Getter is a great service for handling recurring and usage based
+Sharpy is a client for the GetCheddar (formerly CheddarGetter) (https://getcheddar.com/) API.
+GetCheddar is a great service for handling recurring and usage based
 billing.
 
-There are some existing python Cheddar Getter clients but they have
+There are some existing python GetCheddar clients but they have
 significant licensing problems, packaging problems, bugs, and are only partial
-implementations of the Cheddar Getter API.
+implementations of the GetCheddar API.
 
 Sharpy offers a number of advantages:
 
@@ -21,7 +21,7 @@ Sharpy offers a number of advantages:
 * Both a high and low level API - Work with cheddar the way you want to.
 * 100% test coverage.
 * Proper packaging - Sharpy can be installed via easy_install and PIP.
-* Implements almost all of the Cheddar Getter API (See TODOs below).
+* Implements almost all of the GetCheddar API (See TODOs below).
 * Will have complete documentation soon.
 
 That all being said, sharpy is still very new and is likely to undergo some 

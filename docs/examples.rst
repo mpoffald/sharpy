@@ -16,8 +16,8 @@ Creation
 ========
 
 Customer creation is generally just a simple call on a product instance.  The 
-:py:func:`CheddarProduct.create_customer` method supports everything that the Cheddar Getter API 
-`add customer <https://cheddargetter.com/developers#add-customer>`_ call
+:py:func:`CheddarProduct.create_customer` method supports everything that the GetCheddar API 
+`create a new customer <http://docs.getcheddar.com/#create-a-new-customer>`_ call
 supports.
 
 Free Customers
@@ -31,7 +31,7 @@ Free customers require a minimal amount of information.  Accordingly, the call t
 Paypal Customers
 ================
 
-Paypal customers require only a little bit more information.  You ask CheddarGetter to create 
+Paypal customers require only a little bit more information.  You ask GetCheddar to create 
 the account, then redirect the user to the Paypal site to log in and authorize the subscription.
 
 .. literalinclude:: examples/customer_creation/paypal.py
@@ -39,7 +39,7 @@ the account, then redirect the user to the Paypal site to log in and authorize t
     
 When the user has accepted or cancelled the subscription they will be redirected to the URLs 
 passed into the creation call.  You should always verify the status of the account with 
-CheddarGetter directly, rather than relying on the user visiting those URLs.
+GetCheddar directly, rather than relying on the user visiting those URLs.
     
 Paid Customers
 ==============
@@ -55,7 +55,7 @@ Customers With Optional Info
 Cheddar has a number of optional fields which they accept when creating a
 customer.  Most of these fields are simply provided to help you keep track
 of customer info, but some of the fields (e.g. ``initial_bill_date``) can
-affect Cheddar Getter's behavior.  Check out Cheddar Getter's `API docs  <https://cheddargetter.com/developers#add-customer>`_ for more details on specific optional fields.
+affect GetCheddar's behavior.  Check out GetCheddar's `API docs  <http://docs.getcheddar.com/#create-a-new-customer>`_ for more details on specific optional fields.
 
 .. literalinclude:: examples/customer_creation/optional.py
     :linenos:
@@ -73,8 +73,8 @@ Customers With Tracked Items
 
 Depending on your pricing model, you may want to create customers as having
 already consumed `tracked items
-<http://support.cheddargetter.com/kb/pricing-plans/pricing-plan-basics>`_.
-Fortunately, Cheddar Getter's API allows us to provide tracked item
+<http://support.getcheddar.com/kb/pricing-plans/pricing-plan-basics>`_.
+Fortunately, GetCheddar's API allows us to provide tracked item
 information as part of the create customer call.  While you can always
 report on tracked items with their own API calls, reporting tracked item
 usage as part of customer creation saves a potentially slow request/response
@@ -95,7 +95,7 @@ If you don't include a ``quantity`` value, sharpy assumes a quantity of ``1``.
 Customers With Custom Charges
 =============================
 
-Similar to creating customers with tracked items, the Cheddar Getter API
+Similar to creating customers with tracked items, the GetCheddar API
 allows you to provide custom charge information as part of the create customer
 call.  Doing so saves a request to the API and eliminates the risk of 
 customers getting created without the desired charges.  Just like with
@@ -142,11 +142,11 @@ Get all customers
 Hosted Updates
 ==============
 
-CheddarGetter has a "hosted" solution that allows you to get up and 
+GetCheddar has a "hosted" solution that allows you to get up and 
 running quickly.  This solution allows you to direct the customer to a 
-CheddarGetter-hosted site to sign up.  Once signed up, you need to be able to 
+GetCheddar-hosted site to sign up.  Once signed up, you need to be able to 
 send the customer back to the correct account to modify their subscriptions.
-To do this, you need to calculate a CheddarGetter key for the account.
+To do this, you need to calculate a GetCheddar key for the account.
 
 .. code:: python
     
