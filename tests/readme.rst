@@ -18,9 +18,9 @@ When trying to install elementtree, pip may report that there is no such package
     cd elementtree-1.2.6-20050316/
     pip install .
 
-CheddarGetter Setup
+Cheddar Setup
 =============
-You will also need to setup the correct plans in cheddar. You may want to set up a product intended just for testing.
+You will also need to setup the correct plans in Cheddar. You may want to set up a product intended just for testing.
 
 
 

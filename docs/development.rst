@@ -3,16 +3,16 @@ Developing Sharpy
 =================
 
 Due to Sharpy's nature as an API client and due to some limitations in 
-GetCheddar's API, there is a bit of a setup one needs to do to work
+Cheddar's API, there is a bit of a setup one needs to do to work
 on sharpy.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~
-GetCheddar Account
+Cheddar Account
 ~~~~~~~~~~~~~~~~~~~~~~
 
 To run sharpy's test suite, you will need to create an account and product
-on GetCheddar.  As part of that setup, you will need to manually create
+in Cheddar.  As part of that setup, you will need to manually create
 certain plans and set certain options as they are not available to change
 via Cheddar's API.
 
@@ -20,8 +20,8 @@ via Cheddar's API.
 Create Account
 ==============
 
-Go to the `GetCheddar <https://getcheddar.com>`_ website and click on
-the "sign up" link at the top right corner of the page to create account.
+Go to the `Cheddar <https://getcheddar.com>`_ website and click on
+the "sign up" link at the top right corner of the page to create an account.
 Their free account should give you everything you need to work on sharpy.
 Once you have completed Cheddar's sign-up form you will need to wait for a
 confirmation email.
@@ -177,7 +177,7 @@ Local Environment
 There is a little bit of setup you need to do to get the sharpy test suite
 running on your local machine.  This setup mostly involves installing some
 development/testing tools as well as configuring the test suite so that it 
-knows what it needs to know about your GetCheddar account.
+knows what it needs to know about your Cheddar account.
 
 
 Getting the code
